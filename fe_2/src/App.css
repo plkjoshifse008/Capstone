@@ -1,0 +1,124 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #393096;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.bgstyle{
+  background-image: "url('../assets/logo-color.png')"
+}
+
+/* Landing Page Backdrop */
+.landing-backdrop {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  background-image: url('../src/assets/furniture.png'); /* Your background image */
+  backdrop-filter: blur(100px) brightness(20%);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Text Container for Encapsulation */
+.text-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.5); /* Translucent white */
+  border-radius: 5px;
+  padding: 10px;
+  max-width: 600px;
+  text-align: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Box shadow for some depth */
+  color: #333; /* Main text color */
+}
+
+/* Welcome Message Container */
+.welcome-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Welcome Message Styling */
+.welcome-message h2{
+  padding: 20px;
+  font-size: 24px; /* Adjust text size for better readability */
+  color: #060505;
+  text-align: center;
+  max-width: 800px;
+  position: absolute;
+  top: 10px; /* Adjust top alignment as needed */
+  left: 50%;
+  transform: translateX(-50%); /* Center horizontally */
+}
+
+/* Home Text: Centered Vertically and Horizontally */
+.home-text {
+  font-size: 18px;
+  color: #000;
+  margin: 0;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Perfect vertical and horizontal centering */
+  width: 100%;
+}
+
+/* Paragraph Text: Align at the Bottom and Center Text */
+.para-text {
+  font-size: 14px;
+  color: rgb(3, 1, 1);
+  line-height: 1.6;
+  margin: 0;
+  padding-bottom: 80px;
+  position: absolute;
+  bottom: 10px; /* Adjust bottom spacing */
+  left: 50%;
+  transform: translateX(-50%); /* Center horizontally */
+  text-align: center;
+  width: 100%;
+  max-width: 600px; /* Restrict the width */
+}

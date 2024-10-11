@@ -1,0 +1,1 @@
+export const baseURL = 'http://srv601507.hstgr.cloud:8000';
